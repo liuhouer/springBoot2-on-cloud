@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文件上传</title>
+</head>
+<body>
+    <div id="index">
+        Hello index
+    </div>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <div>
+<!--            accept:接收的图片类型-->
+            <input type="file" id="file" name="file" value="选择图片" accept="image/jpeg,image/png,image/jpg">
+<!--            name="file"，这里的name要和后端的控制器controller做好映射-->
+        </div>
+        <div>
+            <input type="submit" value="上传文件">
+        </div>
+    </form>
+</body>
+</html>

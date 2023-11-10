@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: springboot-imooc
+  cloud:
+    nacos:
+      config:
+        server-addr: 39.106.30.93:8848 # nacos服务器所在地址，ip：port
+        file-extension: yaml # 文件的后缀名,这个yaml文件会存在于云端（Nacos）中
